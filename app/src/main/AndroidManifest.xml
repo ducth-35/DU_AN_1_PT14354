@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="company.luongchung.camnangamthuc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconmain3"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="company.huynhduc.camnangamthuc.Manhinhchinh">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="company.huynhduc.camnangamthuc.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="company.huynhduc.camnangamthuc.Search_View" />
+        <activity android:name="company.huynhduc.camnangamthuc.chitiet" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider248144642317018"
+            android:exported="true" />
+
+        <activity android:name="company.huynhduc.camnangamthuc.item_loai" />
+        <activity android:name="company.huynhduc.camnangamthuc.yeuthich" />
+        <activity android:name="company.huynhduc.camnangamthuc.lichsu" />
+        <activity android:name="company.huynhduc.camnangamthuc.MonCaNhan" />
+        <activity android:name="company.huynhduc.camnangamthuc.ThemMonAn" />
+        <activity android:name="company.huynhduc.camnangamthuc.SuaMonAn" />
+
+        <receiver android:name="company.luongchung.Notications.ShowNotication" />
+    </application>
+
+</manifest>
