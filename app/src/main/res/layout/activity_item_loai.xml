@@ -7,23 +7,23 @@
     android:orientation="vertical"
     tools:context="company.luongchung.camnangamthuc.company.huynhduc.camnangamthuc.item_loai"
     android:weightSum="1">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="@color/colorPrimary">
-    <TextView
-        android:text="Ten món ăn "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtTenMon"
-        android:textStyle="normal|bold"
-        android:textAllCaps="true"
-        android:textSize="30sp"
-        android:textColor="#ffff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:text="Ten món ăn "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTenMon"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:textColor="#ffff"/>
 
-</LinearLayout>
+    </LinearLayout>
 
     <ListView
         android:id="@+id/lvChiTietLoai"
