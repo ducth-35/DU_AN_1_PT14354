@@ -115,39 +115,12 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, lichsu.class);
                     startActivity(intent);
                 }
-                if(item.getItemId() == R.id.btnUpdate)
-                {
-                    xuLyUpdateData();
-                }
                 return false;
             }
         });
     }
 
-    private void xuLyUpdateData() {
-        new AlertDialog.Builder(this).setIcon(R.drawable.ic_update_black).setTitle("CẬP NHẬP ỨNG DỤNG")
-                .setMessage("Bạn có muốn thoát cập nhập không ?")
-                .setPositiveButton("Có", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        xuLyCapNhap();
-                    }
-                }).setNegativeButton("Không", new DialogInterface.OnClickListener()
-                {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                     dialog.cancel();
-                    }
-                }).show();
-    }
 
-    private void xuLyCapNhap() {
-        sqLiteDatabase=openOrCreateDatabase(DATABASE_NAME,MODE_PRIVATE,null);
-        sqLiteDatabase.execSQL("DELETE FROM TBMONAN");
-        sqLiteDatabase.close();
-        new UpdateData().execute();
-
-    }
 
     private void xuLySaoChepSQLite() {
         File dbfile= getDatabasePath(DATABASE_NAME);
