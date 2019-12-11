@@ -13,8 +13,5 @@
         android:id="@+id/btnLichSu"
         android:icon="@drawable/ic_history"
         android:title="Lịch Sử Xem" />
-    <item
-        android:id="@+id/btnUpdate"
-        android:icon="@drawable/ic_update"
-        android:title="Cập nhật" />
+
 </menu>
