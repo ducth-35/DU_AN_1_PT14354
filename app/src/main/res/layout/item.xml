@@ -15,7 +15,7 @@
         android:gravity="center"
         android:text="TextView"
         android:textColor="@color/Campfire_Nau"
-        android:textSize="26dp"
+        android:textSize="25dp"
         android:textStyle="normal|bold" />
 
 </LinearLayout>
