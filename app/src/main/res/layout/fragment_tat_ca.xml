@@ -10,16 +10,17 @@
     <com.baoyz.widget.PullRefreshLayout
         android:id="@+id/swipeRefreshLayoutTatCa"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="107dp"
-        android:layout_marginBottom="45dp"
-        android:layout_height="match_parent">
+        android:layout_marginBottom="45dp">
+
         <ListView
-            android:layout_marginTop="111dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:id="@+id/lvTatCa"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/lvTatCa" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="110dpdp"
+            android:layout_marginRight="10dp" />
     </com.baoyz.widget.PullRefreshLayout>
 
 </FrameLayout>
