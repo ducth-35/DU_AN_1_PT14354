@@ -2,16 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:background="@drawable/anh_nen"
+
     tools:context="company.luongchung.camnangamthuc.company.huynhduc.camnangamthuc.LoaiFragment">
 
     <ListView
-        android:layout_marginTop="109dp"
+        android:layout_marginTop="105dp"
+        android:background="@drawable/anh_nen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="45dp"
         android:id="@+id/lvLoaiMonAn" />
 
 
